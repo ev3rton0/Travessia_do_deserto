@@ -1,5 +1,7 @@
 import random
 
+
+
 print("TRAVESSIA DO DESERTO\n")
 print("A = -> Consome uma unidade de água.\n    -> Reduz a sede pra zero.\n")
 print("B = -> Avança uma pequena distância.\n    -> Aumenta a sede e o cansaço do camelo.\n    -> Os nativos também avançam.\n")
@@ -67,7 +69,6 @@ def main():
     agua_restante = 5
     sede = 0
     cansaco_camelo = 0
-
     # Constantes
     limite_sede = 6
     limite_cansaco = 8
@@ -84,7 +85,8 @@ def main():
         elif choice_user == 'D':
             cansaco_camelo, distancia_nativos = jogador_descansar(cansaco_camelo, distancia_nativos)
         elif choice_user == 'E':
-            verificar_status(distancia_jogador, agua_restante, sede, cansaco_camelo, distancia_nativos)
+            verificar_status(distancia_jogador, sede, cansaco_camelo, distancia_nativos, agua_restante)
+            #distancia_jogador, sede, cansaco_camelo, distancia_nativos, agua_restante)
         elif choice_user == 'F':
             fim_de_jogo = desistir()
 
