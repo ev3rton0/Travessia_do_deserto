@@ -87,7 +87,7 @@ def main():
             #distancia_jogador, sede, cansaco_camelo, distancia_nativos, agua_restante)
         elif choice_user == 'F':
             fim_de_jogo = desistir()
-            if fim_de_jogo: break;
+            if fim_de_jogo: break
 
 
         if sede >= limite_sede:
